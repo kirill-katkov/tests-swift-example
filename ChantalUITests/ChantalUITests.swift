@@ -50,11 +50,8 @@ class ChantalUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-
-
         let chantalNavigationBar = app.navigationBars["Chantal"].firstMatch
         XCTAssert(chantalNavigationBar.waitForExistence(timeout: 5))
-
 
         let chantalButtonAdd = app.buttons["Add"].firstMatch
         chantalButtonAdd.tap()
@@ -62,11 +59,12 @@ class ChantalUITests: XCTestCase {
         let allertTextField = app.alerts.textFields.firstMatch
 
         //app.alerts.textFields.containing(NSPredicate(format: "value CONTAINS[c] %@", "Enter task name")).firstMatch
+        allertTextField.tap()
         allertTextField.typeText("test")
 
+        app.alerts.buttons["Add"].tap()
+        XCTAssert(app.staticTexts["test"].exists)
 
-        let chantalButtonAlertAdd = app.alerts.buttons["Add"]
-        chantalButtonAdd.tap()
         //XCTAssertFalse(chantalNavigationBar.waitForExistence(timeout: 5))
 
         // Use recording to get started writing UI tests.
