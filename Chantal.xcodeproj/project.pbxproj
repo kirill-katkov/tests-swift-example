@@ -15,7 +15,19 @@
 		EC556558214D92A9003383B8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC556557214D92A9003383B8 /* Task.swift */; };
 		EC55655A214D9319003383B8 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC556559214D9319003383B8 /* TaskStore.swift */; };
 		EC556560214DBA34003383B8 /* TasksUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55655F214DBA34003383B8 /* TasksUtility.swift */; };
+		ED35AF8B27D0E66100B2001A /* ChantalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35AF8A27D0E66100B2001A /* ChantalUITests.swift */; };
+		ED35AF8D27D0E66100B2001A /* ChantalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35AF8C27D0E66100B2001A /* ChantalUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED35AF8E27D0E66100B2001A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC556538214D78A8003383B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC55653F214D78A8003383B8;
+			remoteInfo = Chantal;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EC556540214D78A8003383B8 /* Chantal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chantal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +40,20 @@
 		EC556557214D92A9003383B8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		EC556559214D9319003383B8 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		EC55655F214DBA34003383B8 /* TasksUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksUtility.swift; sourceTree = "<group>"; };
+		ED35AF8827D0E66100B2001A /* ChantalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChantalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED35AF8A27D0E66100B2001A /* ChantalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChantalUITests.swift; sourceTree = "<group>"; };
+		ED35AF8C27D0E66100B2001A /* ChantalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChantalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EC55653D214D78A8003383B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED35AF8527D0E66100B2001A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				EC556542214D78A8003383B8 /* Chantal */,
+				ED35AF8927D0E66100B2001A /* ChantalUITests */,
 				EC556541214D78A8003383B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				EC556540214D78A8003383B8 /* Chantal.app */,
+				ED35AF8827D0E66100B2001A /* ChantalUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +129,15 @@
 			path = System;
 			sourceTree = "<group>";
 		};
+		ED35AF8927D0E66100B2001A /* ChantalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED35AF8A27D0E66100B2001A /* ChantalUITests.swift */,
+				ED35AF8C27D0E66100B2001A /* ChantalUITestsLaunchTests.swift */,
+			);
+			path = ChantalUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,18 +158,40 @@
 			productReference = EC556540214D78A8003383B8 /* Chantal.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ED35AF8727D0E66100B2001A /* ChantalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED35AF9227D0E66100B2001A /* Build configuration list for PBXNativeTarget "ChantalUITests" */;
+			buildPhases = (
+				ED35AF8427D0E66100B2001A /* Sources */,
+				ED35AF8527D0E66100B2001A /* Frameworks */,
+				ED35AF8627D0E66100B2001A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED35AF8F27D0E66100B2001A /* PBXTargetDependency */,
+			);
+			name = ChantalUITests;
+			productName = ChantalUITests;
+			productReference = ED35AF8827D0E66100B2001A /* ChantalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EC556538214D78A8003383B8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Monte Thakkar";
 				TargetAttributes = {
 					EC55653F214D78A8003383B8 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					ED35AF8727D0E66100B2001A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EC55653F214D78A8003383B8;
 					};
 				};
 			};
@@ -154,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				EC55653F214D78A8003383B8 /* Chantal */,
+				ED35AF8727D0E66100B2001A /* ChantalUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +222,13 @@
 				EC55654E214D78A9003383B8 /* LaunchScreen.storyboard in Resources */,
 				EC55654B214D78A9003383B8 /* Assets.xcassets in Resources */,
 				EC556549214D78A8003383B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED35AF8627D0E66100B2001A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +247,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED35AF8427D0E66100B2001A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED35AF8D27D0E66100B2001A /* ChantalUITestsLaunchTests.swift in Sources */,
+				ED35AF8B27D0E66100B2001A /* ChantalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED35AF8F27D0E66100B2001A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC55653F214D78A8003383B8 /* Chantal */;
+			targetProxy = ED35AF8E27D0E66100B2001A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EC556547214D78A8003383B8 /* Main.storyboard */ = {
@@ -356,6 +436,47 @@
 			};
 			name = Release;
 		};
+		ED35AF9027D0E66100B2001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = mkgkhg.ChantalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chantal;
+			};
+			name = Debug;
+		};
+		ED35AF9127D0E66100B2001A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = mkgkhg.ChantalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chantal;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +494,15 @@
 			buildConfigurations = (
 				EC556553214D78A9003383B8 /* Debug */,
 				EC556554214D78A9003383B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED35AF9227D0E66100B2001A /* Build configuration list for PBXNativeTarget "ChantalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED35AF9027D0E66100B2001A /* Debug */,
+				ED35AF9127D0E66100B2001A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
