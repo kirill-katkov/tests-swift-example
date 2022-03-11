@@ -64,11 +64,16 @@ class ChantalUITests: XCTestCase {
 
         app.alerts.buttons["Add"].tap()
         XCTAssert(app.staticTexts["test"].exists)
-
         //XCTAssertFalse(chantalNavigationBar.waitForExistence(timeout: 5))
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+
+    func testTaskDone() {
+        testTaskAdd()
+        XCUIApplication().tables.staticTexts["test"].swipeRight()
+
     }
 
     func testLaunchPerformance() throws {
